@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internship Registration Form</title>
+</head>
+<body>
+
+<h2 align="center">Internship Registration Form</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend><b>Personal Information</b></legend>
+
+        Full Name:
+        <input type="text" name="fullname" required><br><br>
+
+        Date of Birth:
+        <input type="date" name="dob" required><br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        Email ID:
+        <input type="email" name="email" required><br><br>
+
+        Mobile Number:
+        <input type="number" name="mobile" required><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Educational Details -->
+    <fieldset>
+        <legend><b>Educational Details</b></legend>
+
+        College Name:
+        <input type="text" name="college" required><br><br>
+
+        Degree:
+        <select name="degree">
+            <option>B.E</option>
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>BCA</option>
+            <option>MCA</option>
+        </select><br><br>
+
+        Department:
+        <input type="text" name="department"><br><br>
+
+        Year of Study:
+        <select name="year">
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>Final Year</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Internship Preferences -->
+    <fieldset>
+        <legend><b>Internship Preferences</b></legend>
+
+        Internship Domain:
+        <select name="domain">
+            <option>Web Development</option>
+            <option>App Development</option>
+            <option>Data Science</option>
+            <option>AI & ML</option>
+            <option>Cyber Security</option>
+        </select><br><br>
+
+        Mode of Internship:
+        <input type="radio" name="mode" value="Online"> Online
+        <input type="radio" name="mode" value="Offline"> Offline
+        <input type="radio" name="mode" value="Hybrid"> Hybrid<br><br>
+
+        Duration (Months):
+        <input type="range" name="duration" min="1" max="6">
+    </fieldset>
+
+    <br>
+
+    <!-- Technical Skills -->
+    <fieldset>
+        <legend><b>Technical Skills</b></legend>
+
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+        <input type="checkbox" name="skills" value="Python"> Python
+        <input type="checkbox" name="skills" value="Java"> Java
+    </fieldset>
+
+    <br>
+
+    <!-- Account Details -->
+    <fieldset>
+        <legend><b>Account / Login Details</b></legend>
+
+        Username:
+        <input type="text" name="username" required><br><br>
+
+        Password:
+        <input type="password" name="password" required>
+    </fieldset>
+
+    <br>
+
+    <!-- Address Details -->
+    <fieldset>
+        <legend><b>Address Details</b></legend>
+
+        Address:<br>
+        <textarea name="address" rows="4" cols="40"></textarea><br><br>
+
+        City:
+        <input type="text" name="city"><br><br>
+
+        State:
+        <input type="text" name="state"><br><br>
+
+        Pincode:
+        <input type="number" name="pincode">
+    </fieldset>
+
+    <br>
+
+    <!-- Document Upload -->
+    <fieldset>
+        <legend><b>Document Upload</b></legend>
+
+        Upload Resume:
+        <input type="file" name="resume"><br><br>
+
+        Upload Certificates:
+        <input type="file" name="certificate">
+    </fieldset>
+
+    <br>
+
+    <!-- Additional Preferences -->
+    <fieldset>
+        <legend><b>Additional Preferences</b></legend>
+
+        Preferred Interview Time:
+        <input type="time" name="interview_time"><br><br>
+
+        Portfolio / Website URL:
+        <input type="url" name="portfolio"><br><br>
+
+        Favorite Color:
+        <input type="color" name="favcolor">
+    </fieldset>
+
+    <br>
+
+    <!-- Declaration -->
+    <fieldset>
+        <legend><b>Declaration</b></legend>
+
+        <input type="checkbox" required>
+        I hereby declare that the above information is true and correct.
+    </fieldset>
+
+    <br><br>
+
+    <!-- Form Controls -->
+    <center>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </center>
+
+</form>
+
+</body>
+</html>
